@@ -9,7 +9,7 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
@@ -17,49 +17,49 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background: linear-gradient(135deg, #1e1f29, #2a2c3d);
+      background: linear-gradient(135deg, #1f1f2f, #2a2c3e);
+      color: #fff;
     }
 
     .card {
-      background-color: #202338;
-      padding: 40px;
+      background: #202338;
       border-radius: 20px;
+      padding: 40px 30px;
       text-align: center;
-      /* --- WIDTH INCREASED HERE --- */
-      width: 400px; 
-      /* ----------------------------- */
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      width: 320px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
 
     .card img {
-      width: 80px;
-      height: 80px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 3px solid #FFD700;
+      border: 3px solid #ffcc00;
+      object-fit: cover;
     }
 
     .card h1 {
-      color: #fff;
       font-size: 1.8rem;
       margin-bottom: 10px;
+      font-weight: bold;
     }
 
     .card p {
-      color: #a0a0a0;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      color: #b8b8b8;
       margin-bottom: 30px;
     }
 
     .card a {
       display: block;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
       padding: 12px 20px;
       border-radius: 10px;
+      text-decoration: none;
+      color: #fff; /* Ensures mail link is white */
+      font-weight: 600;
       margin-bottom: 15px;
-      transition: 0.3s;
+      transition: 0.3s ease;
     }
 
     .discord {
@@ -73,16 +73,23 @@
     .instagram {
       background: linear-gradient(45deg, #feda75, #d62976, #4f5bd5);
     }
+    
+    /* --- NEW MAIL STYLE --- */
+    .mail {
+      background-color: #007bff; /* Blue for mail */
+    }
+    /* ---------------------- */
 
     .card a:hover {
-      opacity: 0.85;
+      transform: scale(1.05);
+      opacity: 0.9;
     }
 
     .footer {
-      text-align: center;
-      margin-top: 20px;
+      margin-top: 25px;
       font-size: 0.8rem;
-      color: #888;
+      color: #aaa;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -92,11 +99,14 @@
     <h1>Akash Plays</h1>
     <p>Your source for high-quality gaming content!</p>
 
-    <a href="discord.html" class="discord">💬 Join the Discord Community</a>
-    <a href="youtube.html" class="youtube">▶️ Subscribe on YouTube</a>
-    <a href="instagram.html" class="instagram">📸 Follow on Instagram</a>
-
-    <div class="footer">© 2025 Akash Plays.</div>
+    <a href="/discord" class="discord">💬 Join the Discord Community</a>
+    <a href="/youtube" class="youtube">▶️ Subscribe on YouTube</a>
+    <a href="/instagram" class="instagram">📸 Follow on Instagram</a>
+    
+    <a href="mailto:info@akashplays.com" class="mail">📧 Send an Email</a>
+    <div class="footer">
+      © 2025 Akash Plays
+    </div>
   </div>
 </body>
 </html>
